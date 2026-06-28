@@ -71,6 +71,112 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-大一记录" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/06/28/%E5%A4%A7%E4%B8%80%E8%AE%B0%E5%BD%95/" class="article-date">
+  <time class="dt-published" datetime="2026-06-28T04:00:00.000Z" itemprop="datePublished">2026-06-28</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E4%B8%AA%E4%BA%BA%E8%AE%B0%E5%BD%95/">个人记录</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/06/28/%E5%A4%A7%E4%B8%80%E8%AE%B0%E5%BD%95/">大一复盘：从零基础到做出自己的IoT项目</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="大一复盘：从零基础到做出自己的IoT项目"><a href="#大一复盘：从零基础到做出自己的IoT项目" class="headerlink" title="大一复盘：从零基础到做出自己的IoT项目"></a>大一复盘：从零基础到做出自己的IoT项目</h1><blockquote>
+<p>2025.9 - 2026.6，一个普通大一学生的折腾一年</p>
+</blockquote>
+<h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>转眼间大一就结束了。回头看这一年，从刚入学时对编程一知半解，到现在能独立完成一个完整的IoT项目，中间踩了不少坑，也收获了很多。记录一下这一年的成长轨迹，也算是给自己一个交代。</p>
+<h2 id="算法竞赛：从入门到坚持"><a href="#算法竞赛：从入门到坚持" class="headerlink" title="算法竞赛：从入门到坚持"></a>算法竞赛：从入门到坚持</h2><p>大一上学期加入了学校的ACM竞赛队。说实话，刚开始看到那些算法题的时候，内心是崩溃的——什么贪心、动态规划、图论，听都没听过。</p>
+<p>但竞赛队的氛围很好，学长会带着刷题，队友之间互相讨论。从最基础的C++语法开始，到后来能在洛谷上独立解题，这个过程虽然痛苦，但每次AC一道题的成就感是真的爽。</p>
+<p>现在主要用C++刷题，偶尔也会用Python写一些小工具。虽然离大佬们还差得远，但至少算是入了门。</p>
+<h2 id="IoT项目：从想法到落地"><a href="#IoT项目：从想法到落地" class="headerlink" title="IoT项目：从想法到落地"></a>IoT项目：从想法到落地</h2><h3 id="物联网设计大赛：「凉舍智控」"><a href="#物联网设计大赛：「凉舍智控」" class="headerlink" title="物联网设计大赛：「凉舍智控」"></a>物联网设计大赛：「凉舍智控」</h3><p>大一下学期，和同学组队参加了河南省物联网设计大赛。我们的项目是”凉舍智控”——一个宿舍微气候主动调控系统。</p>
+<p><strong>为什么做这个项目？</strong> 很简单，因为宿舍夏天真的很热（没有空调），而且每个人的体感温度不一样。我们想用技术手段让宿舍环境更舒适。</p>
+<p><strong>技术方案：</strong></p>
+<ul>
+<li>硬件：ESP32开发板 + 温湿度传感器 + 红外模块</li>
+<li>软件：Arduino编程 + MQTT通信 + 边缘AI推理</li>
+<li>亮点：设计了一个SleepComfortNet睡眠舒适度分类模型，只有85KB，断网也能工作</li>
+</ul>
+<p>这个项目让我第一次完整体验了从需求分析、方案设计、硬件调试到文档撰写的全流程。虽然还有很多不完善的地方，但能把想法变成可演示的原型，已经很满足了。</p>
+<h3 id="个人长期项目：智能空间控制系统"><a href="#个人长期项目：智能空间控制系统" class="headerlink" title="个人长期项目：智能空间控制系统"></a>个人长期项目：智能空间控制系统</h3><p>比赛之后，我萌生了一个更大的想法：能不能做一个通用的智能家居控制系统？不局限于某个场景，而是能适配宿舍、办公室、整屋等不同空间。</p>
+<p>于是开始了”智能空间控制系统”这个项目：</p>
+<p><strong>Phase 1（已完成）：</strong></p>
+<ul>
+<li>ESP32开发环境搭建完成</li>
+<li>MQTT双向通信调通</li>
+<li>完整的设计文档输出（四层架构：感知层→协议抽象层→边缘决策层→执行控制层）</li>
+</ul>
+<p><strong>Phase 2（进行中）：</strong></p>
+<ul>
+<li>FastAPI后端开发</li>
+<li>传感器数据采集与处理</li>
+<li>Web管理界面</li>
+</ul>
+<p>这个项目可能会持续很久，但我觉得这种长期迭代的项目才能真正锻炼能力。</p>
+<h2 id="技术栈拓展"><a href="#技术栈拓展" class="headerlink" title="技术栈拓展"></a>技术栈拓展</h2><p>这一年接触的技术栈比高中多了很多：</p>
+<ul>
+<li><strong>嵌入式开发</strong>：Arduino → ESP32，学会了MQTT协议、FreeRTOS、传感器数据采集</li>
+<li><strong>后端开发</strong>：Python + FastAPI，初步理解了API设计、数据库操作</li>
+<li><strong>容器化部署</strong>：Docker Compose，虽然还不太熟练，但已经能把服务跑起来</li>
+<li><strong>AI应用</strong>：研究Agent开发，尝试搭建本地AI助手</li>
+</ul>
+<p>最大的感受是：技术是相通的。学会了一个领域的基础概念，跨领域学习会快很多。</p>
+<h2 id="宿舍生活：在有限条件下创造舒适"><a href="#宿舍生活：在有限条件下创造舒适" class="headerlink" title="宿舍生活：在有限条件下创造舒适"></a>宿舍生活：在有限条件下创造舒适</h2><p>宿舍条件一般，没有空调，夏天只能靠风扇续命。但我觉得，环境是可以改造的。</p>
+<p>花了些时间研究上铺空间的利用，规划了一个”太空舱”式的改造方案：床帘、遮光布、小灯、置物架……虽然预算有限，但能住得更舒服一点，学习效率也会高一些。</p>
+<p>这也是一种能力吧——在有限条件下，找到最优解。</p>
+<h2 id="一些感悟"><a href="#一些感悟" class="headerlink" title="一些感悟"></a>一些感悟</h2><ol>
+<li><strong>做项目比刷题更重要</strong>：算法竞赛很重要，但真正让你理解技术的是完整的项目经历</li>
+<li><strong>不要怕从零开始</strong>：大一的时候我对嵌入式一窍不通，但现在也能独立调试硬件了</li>
+<li><strong>记录很重要</strong>：写博客、写文档，不仅是给别人看，更是给自己梳理思路</li>
+<li><strong>找到同路人</strong>：无论是竞赛队还是开源社区，有人一起走会走得更远</li>
+</ol>
+<h2 id="大二展望"><a href="#大二展望" class="headerlink" title="大二展望"></a>大二展望</h2><p>接下来的一年，几个主要方向：</p>
+<ul>
+<li>继续算法竞赛训练，争取在CCPC等比赛中拿到更好的成绩</li>
+<li>推进智能空间控制系统的开发，争取能实际应用</li>
+<li>深入学习Agent&#x2F;AI应用开发，这是未来的趋势</li>
+<li>开始准备考研，英语是重点突破方向</li>
+</ul>
+<p>大一这一年，算是从”学生”向”开发者”转变的开始。路还很长，但至少方向是对的。</p>
+<hr>
+<p><em>2026.6.28 于河南工程学院</em></p>
+<hr>
+<blockquote>
+<p>本内容由 Coze AI 生成，请遵循相关法律法规及《人工智能生成合成内容标识办法》使用与传播。</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/06/28/%E5%A4%A7%E4%B8%80%E8%AE%B0%E5%BD%95/" data-id="cuidBa8Hr6eZUpnH1P4Edecbk" data-title="大一复盘：从零基础到做出自己的IoT项目" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ACM/" rel="tag">ACM</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/IoT/" rel="tag">IoT</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%A4%8D%E7%9B%98/" rel="tag">复盘</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%A4%A7%E4%B8%80/" rel="tag">大一</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-数据结构30题答案" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2026/06/28/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%8430%E9%A2%98%E7%AD%94%E6%A1%88/" class="article-date">
@@ -788,7 +894,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2026/06/28/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%8430%E9%A2%98%E7%AD%94%E6%A1%88/" data-id="cuidC7_K7gLkC7uQ1XQxkRI-w" data-title="数据结构30题答案" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2026/06/28/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%8430%E9%A2%98%E7%AD%94%E6%A1%88/" data-id="cuidnh72XWK6KJYPccIEZy3jS" data-title="数据结构30题答案" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -841,7 +947,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2026/06/28/hello-world/" data-id="cuidaQ55rXFCkFFD_XXZKt_4y" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2026/06/28/hello-world/" data-id="cuidCu_yI1kbtGVvkqNsD97BA" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -863,7 +969,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%B8%AA%E4%BA%BA%E8%AE%B0%E5%BD%95/">个人记录</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></li></ul>
     </div>
   </div>
 
@@ -873,7 +979,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">学习笔记</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag">数据结构</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ACM/" rel="tag">ACM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IoT/" rel="tag">IoT</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%A4%8D%E7%9B%98/" rel="tag">复盘</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%A4%A7%E4%B8%80/" rel="tag">大一</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">学习笔记</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag">数据结构</a></li></ul>
     </div>
   </div>
 
@@ -883,7 +989,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" style="font-size: 10px;">学习笔记</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 10px;">数据结构</a>
+      <a href="/tags/ACM/" style="font-size: 10px;">ACM</a> <a href="/tags/IoT/" style="font-size: 10px;">IoT</a> <a href="/tags/%E5%A4%8D%E7%9B%98/" style="font-size: 10px;">复盘</a> <a href="/tags/%E5%A4%A7%E4%B8%80/" style="font-size: 10px;">大一</a> <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" style="font-size: 10px;">学习笔记</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 10px;">数据结构</a>
     </div>
   </div>
 
@@ -903,6 +1009,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2026/06/28/%E5%A4%A7%E4%B8%80%E8%AE%B0%E5%BD%95/">大一复盘：从零基础到做出自己的IoT项目</a>
+          </li>
         
           <li>
             <a href="/2026/06/28/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%8430%E9%A2%98%E7%AD%94%E6%A1%88/">数据结构30题答案</a>
